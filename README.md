@@ -2,6 +2,8 @@
 
 A soft, desaturated purple-pink dark theme.
 
+![Homescreen preview with apps open](assets/homescreen.png "Homescreen preview")
+
 ## Install
 
 ```bash
