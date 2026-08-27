@@ -2,6 +2,8 @@
 
 A soft, desaturated purple-pink dark theme with three wallpapers included.
 
+![Preview with bgs](preview.png "backgrounds")
+
 ![Homescreen preview with apps open](assets/homescreen.png "Homescreen preview")
 
 ## Install
