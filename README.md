@@ -27,3 +27,23 @@ This requires `imagemagick` and `yaru-icon-theme`, both of which ship with Omarc
 
 To change the tint, edit the `MODULATE` value (`brightness,saturation,hue`) at
 the top of `install-icons.sh` and re-run it.
+
+### Matching GTK apps / file manager colours (one extra step)
+
+Omarchy doesn't theme GTK/libadwaita apps — Nautilus and friends stay stock
+Adwaita grey. `gtk.css` in this repo carries `@define-color` overrides matching
+`colors.toml`; `omarchy theme set` stages it to
+`~/.local/state/omarchy/current/theme/gtk.css`, but nothing points GTK at it
+until you run:
+
+```bash
+bash ~/.config/omarchy/themes/dreaming/install-gtk.sh
+omarchy theme set dreaming
+```
+
+`install-gtk.sh` writes a one-line `@import` into `~/.config/gtk-3.0/gtk.css`
+and `~/.config/gtk-4.0/gtk.css` (backing up anything already there to
+`gtk.css.pre-dreaming.bak`) and installs a `theme-set` hook that restarts
+Nautilus when Dreaming is applied. The import tracks the *current* theme, so it
+stays dormant under other themes — GTK just logs one "file not found" warning
+for each `gtk.css`; add a `gtk.css` to those themes too if that bothers you.

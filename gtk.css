@@ -1,0 +1,55 @@
+/**
+ * Dreaming — libadwaita / GTK colour overrides
+ *
+ * libadwaita ignores custom GTK themes but honours these @define-color
+ * overrides. Palette mirrors colors.toml.
+ *
+ * Not applied by Omarchy on its own. `omarchy theme set` stages this file to
+ * ~/.local/state/omarchy/current/theme/gtk.css; install-gtk.sh points
+ * ~/.config/gtk-{3,4}.0/gtk.css at it and installs a theme-set hook.
+ */
+
+/* main content / file list — replaces Adwaita's grey */
+@define-color view_bg_color #0f1620;
+@define-color view_fg_color #e3c4d2;
+
+/* window body */
+@define-color window_bg_color #0f1620;
+@define-color window_fg_color #e3c4d2;
+
+/* titlebar */
+@define-color headerbar_bg_color #0b1118;
+@define-color headerbar_fg_color #e3c4d2;
+@define-color headerbar_border_color #e3c4d2;
+@define-color headerbar_backdrop_color #0b1118;
+
+/* sidebar (places panel) */
+@define-color sidebar_bg_color #0b1118;
+@define-color sidebar_fg_color #e3c4d2;
+@define-color sidebar_backdrop_color #080b10;
+@define-color sidebar_border_color #080b10;
+@define-color secondary_sidebar_bg_color #0b1118;
+@define-color secondary_sidebar_fg_color #e3c4d2;
+
+/* cards, popovers, dialogs, tooltips */
+@define-color card_bg_color #1b2430;
+@define-color card_fg_color #e3c4d2;
+@define-color popover_bg_color #151d29;
+@define-color popover_fg_color #e3c4d2;
+@define-color dialog_bg_color #0f1620;
+@define-color dialog_fg_color #e3c4d2;
+@define-color thumbnail_bg_color #1b2430;
+@define-color thumbnail_fg_color #e3c4d2;
+
+/* accent — dreaming's periwinkle */
+@define-color accent_bg_color #9faed0;
+@define-color accent_fg_color #0b1118;
+@define-color accent_color #9faed0;
+
+/* status colours */
+@define-color destructive_bg_color #c59db5;
+@define-color destructive_fg_color #0b1118;
+@define-color destructive_color #c59db5;
+@define-color success_color #abbfdf;
+@define-color warning_color #e3b9d3;
+@define-color error_color #c59db5;
