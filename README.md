@@ -7,7 +7,7 @@ A soft, desaturated purple-pink dark theme.
 ## Install
 
 ```bash
-omarchy theme install https://github.com/<you>/omarchy-dreaming-theme.git
+omarchy-theme-install https://github.com/herny22/omarchy-dreaming-theme.git
 ```
 
 ### Matching folder icons (one extra step)
