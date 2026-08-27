@@ -1,5 +1,9 @@
-<h2>Dreaming Theme</h2>
+<h1>Dreaming Theme</h1>
 A purple-blue pastel theme for Omarchy, featuring three wallpapers.
+
+<h2>Preview</h2>
+
+![alt text](assets/homescreen.png "dreaming desktop preview")
 
 <h2>Installation</h2>
 
