@@ -17,7 +17,7 @@ your machine, and it won't run scripts from an installed theme. So the custom
 folder colours need one manual command after install:
 
 ```bash
-~/.config/omarchy/themes/dreaming/install-icons.sh
+bash ~/.config/omarchy/themes/dreaming/install-icons.sh
 omarchy theme set dreaming
 ```
 
